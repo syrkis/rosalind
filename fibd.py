@@ -1,11 +1,14 @@
 from sys import stdin
-n, m = map(int, stdin.read().strip().split())
+n, m = map(int, stdin.readline().strip().split())
 
-seq = [0] * m
-seq.append(1)
+l = [0 for _ in range(m)]
+l.append(1)
 
-for i in range(n):
-    seq.append(seq[-2] + seq[-1])
-    seq[-1] -= seq[i - m - 1]
+def fibd(l, n, m):
+    if n == 0:
+        return l
+    l.append(sum(l[-m:-1]))
+    return fibd(l, n-1, m)
 
-print(seq)
+out = fibd(l, n - 1, m)
+print(sum(out[-m:]))
