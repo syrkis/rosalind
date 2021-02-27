@@ -1,5 +1,6 @@
 from math import log10
 from sys import stdin
+
 s = stdin.readline().strip()
 A = [float(n) for n in stdin.readline().strip().split()]
 
