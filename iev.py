@@ -1,2 +1,8 @@
-data = [int(n) for n in '100101']
-print(1 * data[0] + 1 * data[1] + 1 * data[2] +  0.75 * data[3] + 0.5 * data[4])
+data = [16590, 17049, 17568, 19604, 16172, 17877]
+prob = [1, 1, 1, 0.75, 0.5, 0]
+out = 0 
+
+for i in range(len(data)):
+    out += data[i] * prob[i]
+
+print(out * 2)
