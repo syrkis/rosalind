@@ -1,4 +1,6 @@
 ./data/
 .DS_Store
 *.txt
+**/*.txt
 *.out
+**/*.out
