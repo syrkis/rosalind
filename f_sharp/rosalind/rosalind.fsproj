@@ -6,11 +6,10 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <Compile Include="DNA.fsi" />
-        <Compile Include="RNA.fsi" />
-        <Compile Include="DNA.fs" />
-        <Compile Include="RNA.fs" />
-        <Compile Include="Utils.fs" />
+        <Compile Include="Transcriptomics.fsi" />
+        <Compile Include="Transcriptomics.fs" />
+        <!--<Compile Include="Parser.fsi" />-->
+        <Compile Include="Parser.fs" />
         <Compile Include="Program.fs" />
     </ItemGroup>
 
